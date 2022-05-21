@@ -161,17 +161,18 @@ footer {
         grid-template-rows: 1fr 1fr;
         max-width: calc(3 * (375px - 2rem) + 2rem);
         margin: 0 auto;
+        align-items: center;
     }
     
     .intro {
         text-align: left;
-        margin-right: 10rem;
+    
     }
 
     .intro h1 {
         font-weight: 700;
-        font-size: 2.7rem;
-        margin-top: 1.5rem;
+        font-size: 3rem;
+        
     }
     .intro p {
         margin-left: 0;
@@ -179,7 +180,7 @@ footer {
     }
     .col-2 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         justify-items: end;
     }
     
@@ -210,7 +211,7 @@ footer {
     .testimonials {
         display: grid;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         grid-template-columns: repeat(3, minmax(auto, calc(375px - 2rem)));
         grid-auto-rows: 1fr;
     }
