@@ -61,4 +61,4 @@ I am still not comfortable with CSS Grid , but still want do more practices to m
 
 - Frontend Mentor - [@najeeb-anwari](https://www.frontendmentor.io/profile/najeeb-anwari)
 - Github - [@najeeb-anwari](https://github.com/najeeb-anwari)
-- Twitter - [@yourusername](https://www.twitter.com/najeeb_anwari)
+- Twitter - [@najeeb_anwari](https://www.twitter.com/najeeb_anwari)
