@@ -1,0 +1,225 @@
+/* Global Styles
+------------------ */
+:root {
+    /* Primary colors */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /* Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p, q {
+    line-height: 1.5;
+}
+
+
+body {
+    background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top, bottom;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    padding: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    
+}
+
+
+
+/* Main Section
+------------------ */
+main {
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: minmax(auto, calc(375px - 2rem));
+    justify-content: center;
+    width: 100%;
+}
+
+/* Intro Section */
+.intro h1 {
+    color: var(--very-dark-magenta);
+}
+
+.intro p {
+    margin: 1rem;
+    margin-bottom: 0;
+    color: var(--dark-grayish-magenta);
+}
+
+/* Reviews Section */
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.review {
+
+    background-color: var(--light-grayish-magenta);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .5rem;
+}
+
+.review .stars {
+    display: flex;
+    gap: .5rem;
+}
+
+.review .review-text {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    text-align: left;
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: .5rem;
+    max-width: calc(375px -2rem);
+}
+
+.card .customer {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.customer-image {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.customer-name {
+    font-weight: 700;
+}
+
+.customer-badge {
+    color: var(--soft-pink);
+}
+
+/* Footer Section
+-------------------- */
+footer {
+    margin-top: 2rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Media Queries 
+-------------------- */
+
+@media (min-width: 768px) {
+    body {
+        background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 35%, 71%;
+        background-position: top left, bottom right;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: calc(3 * (375px - 2rem) + 2rem);
+        margin: 0 auto;
+    }
+    
+    .intro {
+        text-align: left;
+        margin-right: 10rem;
+    }
+
+    .intro h1 {
+        font-weight: 700;
+        font-size: 2.7rem;
+        margin-top: 1.5rem;
+    }
+    .intro p {
+        margin-left: 0;
+        font-weight: 500;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+    }
+    
+    .review {
+        flex-direction: row;
+        
+    }
+
+    .review1 {
+        margin-right: 4rem;
+        padding: 1rem 4rem 1rem 2rem;
+
+    }
+
+    .review2 {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding-left: 2rem;
+    }
+
+    .review3 {
+        margin-left: 4rem;
+        padding: 1rem 4rem 1rem 2rem;
+
+    }
+
+
+    .testimonials {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, minmax(auto, calc(375px - 2rem)));
+        grid-auto-rows: 1fr;
+    }
+
+    .card2 {
+        margin-top: 1.5rem;
+    }
+    .card3 {
+        margin-top: 3rem;
+    }
+
+}
